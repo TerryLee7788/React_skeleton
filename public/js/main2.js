@@ -19104,9 +19104,12 @@ var ListManager = React.createClass({
     });
   },
   render: function () {
+    var divStyle = {
+      marginTop: 10
+    };
     return React.createElement(
       'div',
-      null,
+      { style: divStyle },
       React.createElement(
         'h3',
         null,

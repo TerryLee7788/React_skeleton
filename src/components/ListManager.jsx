@@ -26,8 +26,11 @@ var ListManager = React.createClass({
     });
   },
   render: function () {
+    var divStyle = {
+      marginTop: 10
+    }
     return (
-      <div>
+      <div style={divStyle}>
         <h3>{this.props.title}</h3>
         <form onSubmit={this.handleSubmit}>
           <input onChange={this.onChange} value={this.state.newItemText} />
