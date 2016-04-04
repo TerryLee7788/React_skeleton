@@ -19107,12 +19107,16 @@ var ListManager = React.createClass({
     var divStyle = {
       marginTop: 10
     };
+    var headingStyle = {};
+    if (this.props.headingColor) {
+      headingStyle.background = this.props.headingColor;
+    }
     return React.createElement(
       'div',
       { style: divStyle },
       React.createElement(
         'h3',
-        null,
+        { style: headingStyle },
         this.props.title
       ),
       React.createElement(
@@ -19137,6 +19141,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var ListManager = require('./components/ListManager.jsx');
 
-ReactDOM.render(React.createElement(ListManager, { title: 'Ingredients2' }), document.getElementById('ingredients'));
+// the color is reference at "https://www.youtube.com/yt/brand/color.html"
+ReactDOM.render(React.createElement(ListManager, { title: 'Ingredients2', headingColor: '#e52d27' }), document.getElementById('ingredients'));
 
 },{"./components/ListManager.jsx":161,"react":158,"react-dom":29}]},{},[162]);

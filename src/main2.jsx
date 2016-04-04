@@ -2,4 +2,5 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var ListManager = require('./components/ListManager.jsx');
 
-ReactDOM.render(<ListManager title="Ingredients2" />, document.getElementById('ingredients'));
+// the color is reference at "https://www.youtube.com/yt/brand/color.html"
+ReactDOM.render(<ListManager title="Ingredients2" headingColor="#e52d27" />, document.getElementById('ingredients'));
