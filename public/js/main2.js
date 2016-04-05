@@ -19143,5 +19143,7 @@ var ListManager = require('./components/ListManager.jsx');
 
 // the color is reference at "https://www.youtube.com/yt/brand/color.html"
 ReactDOM.render(React.createElement(ListManager, { title: 'Ingredients2', headingColor: '#e52d27' }), document.getElementById('ingredients'));
+ReactDOM.render(React.createElement(ListManager, { title: 'toDo', headingColor: 'green' }), document.getElementById('todo'));
+ReactDOM.render(React.createElement(ListManager, { title: 'terrytest', headingColor: 'yellow' }), document.getElementById('terrytest'));
 
 },{"./components/ListManager.jsx":161,"react":158,"react-dom":29}]},{},[162]);
